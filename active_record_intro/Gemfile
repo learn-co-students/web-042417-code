@@ -1,0 +1,9 @@
+# frozen_string_literal: true
+source "https://rubygems.org"
+
+group :development do
+  gem "pry"
+  gem "sqlite3"
+  gem "activerecord", "~>5.1.0"
+  gem "require_all"
+end
