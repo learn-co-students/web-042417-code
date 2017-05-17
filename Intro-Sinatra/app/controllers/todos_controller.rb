@@ -3,7 +3,17 @@ class TodosController < ApplicationController
     @todos = Todo.all
     erb :'todos/index'
   end
-
+  get '/todos/new' do
+    erb :'/todos/new'
+  end
+  post '/todos' do
+    @todo = Todo.new(params[:todo])
+    if @todo.save
+      redirect "todos/#{@todo.id}"
+    else
+      redirect "/"
+    end
+  end
   get "/todos/:id" do
     # binding.pry
     todo_id = params[:id].to_i
