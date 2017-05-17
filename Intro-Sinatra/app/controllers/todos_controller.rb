@@ -24,13 +24,23 @@ class TodosController < ApplicationController
       erb :'404', layout: false
     end
   end
-  get "/todos/:id/edit"
+  get "/todos/:id/edit" do
     todo_id = params[:id].to_i
     if Todo.pluck(:id).include?(todo_id)
       @todo = Todo.find(params[:id])
       erb :'todos/edit'
     else
       erb :'404', layout: false
+    end
+  end
+  post '/todos/:id' do
+    todo_id = params[:id].to_i
+    if Todo.pluck(:id).include?(todo_id)
+      @todo = Todo.find(params[:id])
+      @todo.update(params["todo"])
+      erb :'todos/show'
+    else
+      redirect "/"
     end
   end
 end

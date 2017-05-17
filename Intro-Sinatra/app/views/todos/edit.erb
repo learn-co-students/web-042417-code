@@ -3,7 +3,10 @@
 
 <form action="/todos/<%= @todo.id %>" method="POST">
   <label>Title:</label>
-  <input type="text" name="todo[title]" id="todo_title">
-  <input checkbox type="text" name="todo[done]" id="todo_title">
-  <input type="submit" value="Create Item">
+  <input type="text" name="todo[title]" value="<%= @todo.title %>" id="todo_title">
+  <p>
+    <input class="with-gap" name="todo[done]" type="checkbox" id="todo_done"  />
+    <label for="todo_done">isDone?</label>
+  </p>
+  <input type="submit" value="Send Update">
 </form>
