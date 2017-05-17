@@ -8,10 +8,10 @@ class TodosController < ApplicationController
     # binding.pry
     todo_id = params[:id].to_i
     if Todo.pluck(:id).include?(todo_id)
-      @todo = Todo.find(todo_id)
+      @todo = Todo.find(params[:id])
       erb :'todos/show'
     else
-      redirect '/'
+      erb :'404', layout: false
     end
   end
 
