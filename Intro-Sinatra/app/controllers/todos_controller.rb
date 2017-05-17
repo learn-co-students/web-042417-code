@@ -1,8 +1,4 @@
-class TodosController < Sinatra::Base
-  # sets root as the parent-directory of the current file
-  set :root, File.join(File.dirname(__FILE__), '..')
-  # sets the view directory correctly
-  # set :views, Proc.new { File.join(root, "views") }
+class TodosController < ApplicationController
   get "/" do
     @todos = Todo.all
     erb :'todos/index'
