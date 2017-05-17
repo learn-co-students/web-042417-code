@@ -1,0 +1,9 @@
+
+<h1>Edit a Todo Item</h1>
+
+<form action="/todos/<%= @todo.id %>" method="POST">
+  <label>Title:</label>
+  <input type="text" name="todo[title]" id="todo_title">
+  <input checkbox type="text" name="todo[done]" id="todo_title">
+  <input type="submit" value="Create Item">
+</form>

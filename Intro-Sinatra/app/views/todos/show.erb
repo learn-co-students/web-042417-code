@@ -6,7 +6,7 @@
         <p> <%= @todo.done ? "GOOD JOB" : "DO WORK" %></p>
       </div>
       <div class="card-action">
-        <a href="#">Update</a>
+        <a href="/todos/<%= @todo.id %>/edit">Update</a>
         <a href="#">Delete</a>
       </div>
     </div>
