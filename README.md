@@ -7,6 +7,7 @@
 - [Rails Routing](http://youtu.be/TQ1eHFsH6SI)
 - [FULL RAILS CRUD](http://youtu.be/umMiA-9WQpc)
 - [Bcrypt or Bicoin](http://youtu.be/mZaVhtHIEKw)
+- [Rails Sessions](http://youtu.be/_SBMH8_NZdE)
 
 
 ## Avi Lecture Videos
