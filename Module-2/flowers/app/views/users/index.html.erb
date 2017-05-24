@@ -1,0 +1,9 @@
+<h1>All Dope Users</h1>
+<ul>
+  <% @users.each do |user| %>
+
+    <li>Username:<%= link_to  user.username %></li>
+    <li>Email:<%= user.email %></li>
+
+  <% end %>
+</ul>

@@ -1,0 +1,7 @@
+<h2><%= @flower.name %></h2>
+<ul>
+  <li>Price: <%= @flower.price %></li>
+  <li>Smokeable: <%= @flower.smokeable %></li>
+  <li><%= link_to "Edit", edit_flower_path(@flower) %></li>
+  <li><%= link_to "Delete", delete_flower_path(@flower), method: :delete, data: {confirm: "Are you sure bruh?"} %></li>
+</ul>

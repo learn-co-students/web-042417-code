@@ -1,0 +1,23 @@
+<%= form_for @flower, class: 'form-signin' do |form| %>
+<% if @page == "new" %>
+<div class="input-group">
+  <%= form.label :name, class:"sr-only"%>
+  <%= form.text_field :name, placeholder: "Flower Name", class: "form-control" %>
+  <% end %>
+</div>
+<div class="input-group">
+  <%= form.label :smokeable %>
+  <%= form.check_box :smokeable, class: "form-control"%>
+</div>
+<div class="input-group">
+  <%= form.label '$', class: "input-group-addon"%>
+  <%= form.number_field :price, placeholder: "Flower Price", class: "form-control" %>
+</div>
+<div class="input-group">
+  <% if @page == "edit" %>
+  <%= form.submit "Update", class: "btn btn-primary" %>
+<% else %>
+  <%= form.submit "Create", class: "btn btn-primary" %>
+  <% end %>
+</div>
+<% end %>
