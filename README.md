@@ -5,6 +5,8 @@
 - [Sinatra Post & Forms](http://youtu.be/SNd3iVEjv6Y)
 - [Intro to Rails](http://youtu.be/ueqXtVOl9uI)
 - [Rails Routing](http://youtu.be/TQ1eHFsH6SI)
+- [FULL RAILS CRUD](http://youtu.be/umMiA-9WQpc)
+- [Bcrypt or Bicoin](http://youtu.be/mZaVhtHIEKw)
 
 
 ## Avi Lecture Videos
