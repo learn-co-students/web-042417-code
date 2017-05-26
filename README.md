@@ -13,3 +13,4 @@
 ## Avi Lecture Videos
 - [Rails Intro](https://www.youtube.com/watch?v=cLKCqMz0YsQ)
 - [RoR Forms & Validations](https://www.youtube.com/watch?v=pjMITmr8hHA)
+- [Rails Auth](https://www.youtube.com/watch?v=sT-2uw81as0)
