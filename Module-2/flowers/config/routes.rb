@@ -13,8 +13,8 @@ Rails.application.routes.draw do
 
   resources :users , only: [:index, :new, :create]
 
-  get 'login', to: 'sessions#new'
+  get 'auth/:provider/callback', to: 'sessions#new'
   delete "/logout", to: "sessions#destroy", as: :logout
-  resources :sessions, only: [:new, :create, :destroy]
+  resources :sessions, only: [:create, :destroy]
 
 end
