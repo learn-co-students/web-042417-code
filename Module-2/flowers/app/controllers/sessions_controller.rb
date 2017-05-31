@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
   def new
   end
 
-  def create
+def create
     user = User.find_by_email(params[:email])
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
      flash.now.alert = "invalid login credentials"
      redirect_to "/"
     end
- end
+end
 
   def destroy
      session[:user_id] = nil
