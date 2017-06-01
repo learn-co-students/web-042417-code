@@ -8,6 +8,7 @@
 - [FULL RAILS CRUD](http://youtu.be/umMiA-9WQpc)
 - [Bcrypt or Bicoin](http://youtu.be/mZaVhtHIEKw)
 - [Rails Sessions](http://youtu.be/_SBMH8_NZdE)
+- [Omniauth](http://youtu.be/LQlfsr7ZV7s)
 
 
 ## Avi Lecture Videos
