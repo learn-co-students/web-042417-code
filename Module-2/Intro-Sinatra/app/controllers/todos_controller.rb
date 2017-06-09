@@ -37,6 +37,7 @@ class TodosController < ApplicationController
     todo_id = params[:id].to_i
     if Todo.pluck(:id).include?(todo_id)
       @todo = Todo.find(params[:id])
+      binding.pry
       @todo.update(params["todo"])
       erb :'todos/show'
     else
