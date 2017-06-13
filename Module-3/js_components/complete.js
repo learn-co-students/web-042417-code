@@ -54,7 +54,9 @@ window.onload = function () {
       const clickedEl = event.target
       switch (clickedEl.className) {
         case 'glyphicon glyphicon-remove':
+          // remove todo item from array
           this.todoList.removeTodo(clickedEl.parentNode.childNodes[2].innerText)
+          // remove todo item from the dom
           clickedEl.parentNode.parentNode.removeChild(clickedEl.parentNode)
           break
         case 'glyphicon glyphicon-star':
