@@ -47,7 +47,7 @@ class MTGCardList {
   }
   fetchCards (page) {
     this.apiAdapter.getCards(page)
-      .then(this.getJson)
+      // .then(this.getJson)
       .then(this.createCards.bind(this))
       .then(this.render.bind(this))
   }
@@ -87,7 +87,7 @@ class MTGApiAdapter {
         return fetch(this.cards + `?page=${this.page}`)
       default:
         this.page = 1
-        return fetch(this.cards)
+        return fetch(this.cards).then(r => r.json())
     }
   }
   searchCards (name) {
