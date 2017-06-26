@@ -11,7 +11,9 @@
 - [Omniauth](http://youtu.be/LQlfsr7ZV7s)
 
 ### Module 3
+- [JS DOM](http://youtu.be/LbomvijiS2Q)
 - [JS Components](http://youtu.be/ac8arfpR_DM)
+- [Rails API](http://youtu.be/5oNSVdUQmzc)
 
 ## Avi Lecture Videos
 - [Rails Intro](https://www.youtube.com/watch?v=cLKCqMz0YsQ)
