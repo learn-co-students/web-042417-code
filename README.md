@@ -15,6 +15,9 @@
 - [JS Components](http://youtu.be/ac8arfpR_DM)
 - [Rails API](http://youtu.be/5oNSVdUQmzc)
 
+### Module 4
+- [React Pack](http://youtu.be/VuVJDVgd1ls)
+
 ## Avi Lecture Videos
 - [Rails Intro](https://www.youtube.com/watch?v=cLKCqMz0YsQ)
 - [RoR Forms & Validations](https://www.youtube.com/watch?v=pjMITmr8hHA)
