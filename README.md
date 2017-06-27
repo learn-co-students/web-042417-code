@@ -17,6 +17,7 @@
 
 ### Module 4
 - [React Pack](http://youtu.be/VuVJDVgd1ls)
+- [Prop & State](http://youtu.be/k-OxEMFwDig)
 
 ## Avi Lecture Videos
 - [Rails Intro](https://www.youtube.com/watch?v=cLKCqMz0YsQ)
