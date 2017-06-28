@@ -12,6 +12,11 @@ class App extends Component {
       todos: ['Teach like a beast', 'Play MTG like a pro']
     }
   }
+  componentWillMount(){
+  }
+  shouldComponentUpdate(){
+    console.log("update");
+  }
   // Add todo handler
   addTodo (event) {
     event.preventDefault()
