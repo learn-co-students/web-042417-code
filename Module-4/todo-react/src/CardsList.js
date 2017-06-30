@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Card from './Card'
 
-class CardList extends Component{
+class CardsList extends Component{
   state = {
     cards: [],
     apiUrl: 'http://api.magicthegathering.io/v1/cards'
@@ -24,4 +24,4 @@ class CardList extends Component{
   }
 }
 
-export default CardList
+export default CardsList
