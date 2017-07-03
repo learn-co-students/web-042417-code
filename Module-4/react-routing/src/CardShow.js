@@ -1,24 +1,22 @@
 import React, { Component } from 'react'
+import CardFactory from './CardFactory'
 import Card from './Card'
 
-class CardShow extends Component{
-  state = {
-    card: {},
-    apiUrl: `http://api.magicthegathering.io/v1/cards/${this.props.match.params.cardId}`
+class CardShow extends Component {
+  loading () {
+    if (this.props.card) {
+      return <Card {...this.props.card} key={this.props.card.multiverseid} />
+    } else {
+      return <h2>Loading...</h2>
+    }
   }
-  componentWillMount(){
-    fetch(this.state.apiUrl)
-    .then(res => res.json())
-    .then(jsonRes => {
-          console.log("card show", jsonRes)
-            this.setState({card: jsonRes.card})
-    })
-  }
-  render(){
-    return(
-      <Card {...this.state.card} key={this.state.card.multiverseid} />
+  render () {
+    return (
+      <div>
+        { this.loading() }
+      </div>
     )
   }
 }
 
-export default CardShow
+export default CardFactory(CardShow)

@@ -1,17 +1,15 @@
 import React from 'react'
 import {Switch, Route} from 'react-router-dom'
-import CardsList from './CardsList'
-import CardDetails from './CardDetails'
+import CardList from './CardList'
+import CardShow from './CardShow'
 
-const CardRouter = () => {
+const CardsRouter = () => {
   return (
     <div>
-      <Switch>
-        <Route exact path='/cards' component={CardsList} />
-        <Route path='/cards/:cardId' component={CardDetails} />
-      </Switch>
+      <Route exact path='/cards' component={CardList} />
+      <Route path='/cards/:cardId' component={CardShow} />
     </div>
   )
 }
 
-export default CardRouter
+export default CardsRouter
