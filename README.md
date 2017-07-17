@@ -20,6 +20,9 @@
 - [Prop & State](http://youtu.be/k-OxEMFwDig)
 - [Auth](http://youtu.be/1SpnS-Gx0K4)
 
+### Module 5
+= [Intro Redux](http://youtu.be/PP6RLHaG-04)
+
 ## Avi Lecture Videos
 - [Rails Intro](https://www.youtube.com/watch?v=cLKCqMz0YsQ)
 - [RoR Forms & Validations](https://www.youtube.com/watch?v=pjMITmr8hHA)
